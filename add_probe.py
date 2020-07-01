@@ -53,7 +53,7 @@ def add_probe(parser):
             value = hex(int(addr,16)-offset)
             probeName = "probe"+str(probeNumber) 
             if debug:
-                print("Putting "+ probeName + "in " + addr)
+                print("Putting "+ probeName + " in " + addr)
                 print ("Offset from the beginng of the section " + value)
             if(len(fields)>=2):
                 probeName = fields[1].strip()
