@@ -78,3 +78,10 @@ On the other hand, the probes created with this tool are slightly different. The
 Taking advantage of them, this tool adds a symbol referring to an arbitrary address of memory  (as it is was  the beginning  of a function)  and then, system tap will take care of the rest.
 
 Notice that with this approach all system tap's power is preserved  but at the same time the binary has not been patched and we avoid to mess something up 
+
+## References
+
+https://sourceware.org/systemtap/SystemTap_Beginners_Guide/index.html
+https://manpages.debian.org/testing/systemtap/stap.1.en.html
+https://sourceware.org/systemtap/langref.pdf
+
