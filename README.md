@@ -82,6 +82,8 @@ Notice that with this approach all system tap's power is preserved  but at the s
 ## References
 
 https://sourceware.org/systemtap/SystemTap_Beginners_Guide/index.html
+
 https://manpages.debian.org/testing/systemtap/stap.1.en.html
+
 https://sourceware.org/systemtap/langref.pdf
 
