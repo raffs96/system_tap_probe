@@ -31,7 +31,7 @@ Let's take /bin/sh as a sample binary....
 
 ### Probe a function
 
-Let's suppose that I want to probe the beginning of the help function and I know that it's address is 0xbb20,. So, I'll put 0xbb20 in the ListofAddresses and then  
+Let's suppose that I want to probe the beginning of the help function and I know that it's address is 0xbb20. So, I'll put 0xbb20 in the ListofAddresses and then  
 
  `./add_probe.py examples/probe_in_a_function examples/ls ./ls_probed -d -a autogen`
 
@@ -69,7 +69,7 @@ On the right `sudo stap -v -g autogen ` and on the left `./ls_probed --help`
 
 ## How does it work?
 
-In the usual use case, system tap probes are declared as "marks" in the source code with macros in the format  "DTRACE_PROBEN(my_prog,ciao);"  where N stands for the number of arguments to pass to stap script".
+In the usual use case, system tap probes are declared as "marks" in the source code with macros in the format  "DTRACE_PROBEN(my_prog,ciao);"  where N stands for the number of arguments to pass to stap script.
 
 Once compiled the mark will become a NOP instruction rounded by 2*N instructions whose task is to  place the parameters for the stap script and restore the status when come back.  So, when stap is probing , the NOP will be replaced by an int3 instruction and when the program reaches the mark the control will go to the kernel. 
 
